@@ -17,9 +17,8 @@ body {
     grid-gap: 64px;
 }
 
-
 .img-repsonive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -35,9 +34,18 @@ body {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+   width: 100%; 
+   aspect-ratio: 1/1;
+}
+
 .card {
-    background-color: white;
-    margin: 30 0;
+    background: white;
+    margin: 30px 0;
+}
+
+.card-header.grid {
+    grid-gap: 0;
 }
 
 .card-body {
@@ -65,7 +73,7 @@ body {
 section {
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
 }
 
 section.secondary {
@@ -106,7 +114,7 @@ header h3 {
 
 header a {
     font-weight: 700;
-    font-size: 14px;+
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: #272044;
@@ -169,8 +177,6 @@ main p {
 
 footer {
     color: white;
-    background-image: ;
-
 }
 
 footer h3 {
@@ -226,5 +232,13 @@ footer a {
 
     section {
         padding: 30px 0;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16/9;
     }
 }
